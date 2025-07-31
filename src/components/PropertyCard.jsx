@@ -9,7 +9,7 @@ const PropertyCard = () => {
   if (loading) return <BounceLoader className="flex items-center justify-center" />;
 
   return (
-    <section className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+    <section className="grid grid-cols-1 gap-5 lg:grid-cols-3 w-full">
       {data.properties.map(function (item) {
         return (
             <article key={item.id} className="flex flex-col p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
