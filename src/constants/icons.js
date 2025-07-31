@@ -1,0 +1,1 @@
+export const diagonalArrow = 'https://res.cloudinary.com/de2vjcr29/image/upload/v1753930337/Statistics_Icon_zjh6cg.svg';

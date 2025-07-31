@@ -1,4 +1,5 @@
 import React from 'react'
+import { dark500 } from '../../../constants/themes'
 
 const SectionOne = () => {
 
@@ -15,8 +16,8 @@ const SectionOne = () => {
         </div>
         <div className='flex items-center justify-center space-x-4'>
 
-            <button className="border border-gray-200 bg-[#292929] text-white py-2 lg:py-3 px-6 rounded-md ">Get Started</button>
-            <button className="py-2 lg:py-3 px-6 rounded-md bg-white text-[#292929] ">Watch Demo</button>
+            <button className={`border lg:border-none border-gray-200 bg-[${dark500}] text-white py-2 lg:py-3 px-6 rounded-md`}>Get Started</button>
+            <button className={`py-2 lg:py-3 px-6 rounded-md bg-white text-[${dark500}] `}>Watch Demo</button>
         </div>
   </section>
   )

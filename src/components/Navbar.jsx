@@ -1,17 +1,17 @@
 import React from "react";
-import images from "../constants/images";
+import { desktopLogoUrl } from "../constants/images";
 import navMenu from "../constants/navMenu";
 import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-20 bg-white py-5 font-light">
+    <nav className=" bg-white py-5 font-light">
       
-      <ul className="relative flex justify-between items-center">
+      <ul className=" flex justify-between items-center">
         {/* Left side: Desktop logo and mobile menu icon */}
         <li className="flex justify-between items-center">
           {/* Logo displayed on desktop */}
-          <a href="/"><img className="" src={images.desktopLogoUrl} alt="logo" /></a>
+          <a href="/"><img className="" src={desktopLogoUrl} alt="logo" /></a>
         </li>
 
         <li className="lg:flex space-x-8 text-lg">
