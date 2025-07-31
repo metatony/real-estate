@@ -5,9 +5,9 @@ import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <nav className=" bg-white py-5 font-light">
+    <nav className="sticky top-0 z-20 bg-white py-5 font-light ">
       
-      <ul className=" flex justify-between items-center">
+      <ul className="relative flex justify-between items-center">
         {/* Left side: Desktop logo and mobile menu icon */}
         <li className="flex justify-between items-center">
           {/* Logo displayed on desktop */}

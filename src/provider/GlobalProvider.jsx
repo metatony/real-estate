@@ -27,7 +27,7 @@ export const GlobalProvider = ({ children }) => {
         setTimeout(() => {
           setData(response.data);
           setLoading(false);
-        }, 2000);
+        }, 5000);
       })
       .catch(function (error) {
         console.error("Error fetching data:", error);

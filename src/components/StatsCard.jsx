@@ -6,7 +6,7 @@ const StatsCard = (props) => {
     <section className="flex flex-col justify-between border p-6 h-44 lg:h-64 w-40 lg:w-60 border-[#E5E5E5] rounded-xl">
       <div className="flex justify-end ">
         <img
-          className="rounded-full border p-2.5 border-[#E5E5E5] "
+          className="rounded-full w-6 h-6 lg:w-8 lg:h-8 border p-0.5 lg:p-1.5   border-[#E5E5E5]"
           src={diagonalArrow}
           alt=""
         />

@@ -1,12 +1,15 @@
 import React from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import { light300 } from "../../../constants/themes";
-import { statsDesktopImageUrl, statsMobileImageUrl } from "../../../constants/images";
+import {
+  statsDesktopImageUrl,
+  statsMobileImageUrl,
+} from "../../../constants/images";
 import StatsCard from "../../../components/StatsCard";
 
 const SectionTwo = () => {
   return (
-    <section className="flex flex-col justify-center items-center py-20 lg:h-screen">
+    <section className="flex flex-col justify-center items-center py-10 lg:py-20">
       <SectionHeader
         sectionName={"About Rubble"}
         title={"Trusted Partner for Your Journey"}
@@ -26,9 +29,16 @@ const SectionTwo = () => {
             meet your needs. With top <br /> properties and dedicated experts,
             we ensure a seamless experience for buying, selling, or renting.
           </p>
-          <img className="w-full hidden lg:block" src={statsDesktopImageUrl} alt="property image" />
-          <img className="w-full lg:hidden" src={statsMobileImageUrl} alt="property image" />
-
+          <img
+            className="w-full hidden lg:block"
+            src={statsDesktopImageUrl}
+            alt="property image"
+          />
+          <img
+            className="w-full lg:hidden"
+            src={statsMobileImageUrl}
+            alt="property image"
+          />
         </article>
 
         {/* statistics  */}
