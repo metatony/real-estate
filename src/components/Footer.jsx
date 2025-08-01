@@ -42,9 +42,10 @@ const Footer = () => {
 
       <hr className='w-full border-t mt-20 mb-6 border-[#E5E5E5]'/>
 
-      <div className='flex flex-col lg:flex-row justify-between lg:items-center text-[#A4A4A4] font-light space-y-4'>
-        <p>&copy; Website built by Metatony 🤖</p>
-        <p>Privacy Policy & Terms Of Use</p>
+      <div className='flex flex-col lg:flex-row justify-center lg:items-center text-[#A4A4A4] font-light space-y-4'>
+        <p>&copy; Website built by <span className='text-black'>Metatony</span>
+        </p>
+        {/* <p>Privacy Policy & Terms Of Use</p> */}
 
       </div>
 

@@ -17,7 +17,7 @@ const Navbar = () => {
         <li className="lg:flex space-x-8 text-lg">
           {/* Desktop Navigation Items */}
           {navMenu.map((item) => (
-            <a key={item.page} href={item.link} className="hidden lg:block"> {item.page} </a>
+            <a key={item.page} href={item.link} className="hidden lg:block hover:font-semibold"> {item.page} </a>
           ))
           }
         </li>

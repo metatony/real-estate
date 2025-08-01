@@ -14,7 +14,7 @@ const HomePage = () => {
       <SectionThree />
       <SectionFour />
       <SectionFive />
-      <SectionSix/>
+      <SectionSix />
     </main>
   );
 };

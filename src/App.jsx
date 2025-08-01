@@ -5,6 +5,8 @@ import HomePage from "./pages/HomePage/HomePage";
 import PropertyPage from "./pages/PropertyPage/PropertyPage";
 import Navbar from "./components/Navbar";
 import { GlobalProvider } from "./provider/GlobalProvider";
+import Agent from "./pages/Agent/Agent";
+import Blog from "./pages/Blog/Blog";
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/propertyPage" element={<PropertyPage />} />
+            <Route path="/propertyPage/:id" element={<PropertyPage />} />
+            <Route path="/agent" element = {<Agent/>} />
+            <Route path="/blog" element = {<Blog/>} />
           </Routes>
           <Footer />
         </BrowserRouter>

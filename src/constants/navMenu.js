@@ -1,7 +1,7 @@
 const navMenu = [
   {
     page: "Home",
-    link: "/home",
+    link: "/",
   },
   {
     page: "Property",

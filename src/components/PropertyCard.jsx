@@ -6,7 +6,12 @@ import { BounceLoader } from "react-spinners";
 const PropertyCard = () => {
   const { data, loading } = useGlobal();
 
-  if (loading) return <BounceLoader className="flex items-center justify-center" />;
+  if (loading)
+    return (
+      <div className="flex items-center justify-center h-[50vh]">
+        <BounceLoader />;
+      </div>
+    );
 
   return (
     <section className="grid grid-cols-1 gap-5 lg:grid-cols-3 w-full">

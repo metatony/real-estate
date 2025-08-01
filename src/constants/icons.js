@@ -14,3 +14,5 @@ export const propertyIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v
 export const calenderIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754045616/calendar_ffegzq.svg";
 export const confirmedLocationIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754045616/location-tick_dih42m.svg";
 export const paymentIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754045615/dollar-square_nhdexy.svg";
+
+export const searchIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754068059/Search_Icon_Container_ax1h9z.svg";
