@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import { servicesImageUrl1, servicesImageUrl2, servicesImageUrl3 } from "../../../constants/images";
-import ServicesCard from "../../../components/ServicesCard";
+import ServicesCard from "../components/ServicesCard";
 
 const SectionThree = () => {
   return (
@@ -14,7 +14,7 @@ const SectionThree = () => {
         }
       />
 
-      <section className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+      <section className="grid grid-cols-1 gap-5 lg:grid-cols-3 w-full">
         <ServicesCard
           image={servicesImageUrl1}
           title={"Buy Property"}

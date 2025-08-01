@@ -10,7 +10,7 @@ const PropertyCard = () => {
 
   return (
     <section className="grid grid-cols-1 gap-5 lg:grid-cols-3 w-full">
-      {data.properties.map(function (item) {
+      {data.properties.slice(0,6).map(function (item) {
         return (
             <article key={item.id} className="flex flex-col p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
               <img

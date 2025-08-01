@@ -3,13 +3,15 @@ import { diagonalArrow } from "../constants/icons";
 
 const StatsCard = (props) => {
   return (
-    <section className="flex flex-col justify-between border p-6 h-44 lg:h-64 w-40 lg:w-60 border-[#E5E5E5] rounded-xl">
+    <section className="flex flex-col justify-between border p-6 h-44 lg:h-[258px] border-[#E5E5E5] rounded-xl">
       <div className="flex justify-end ">
+      <div className="border border-[#E5E5E5] rounded-full p-2.5">
         <img
-          className="rounded-full w-6 h-6 lg:w-8 lg:h-8 border p-0.5 lg:p-1.5   border-[#E5E5E5]"
+          className="w-4 h-4 lg:w-6 lg:h-6"
           src={diagonalArrow}
-          alt=""
+          alt="diagonal arrow icon"
         />
+      </div>
       </div>
       <div className="">
         <p className="text-3xl lg:text-5xl font-semi-bold pb-3">

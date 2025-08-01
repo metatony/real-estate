@@ -9,3 +9,8 @@ export const bedIcon =
   "https://res.cloudinary.com/de2vjcr29/image/upload/v1753976017/solar_bed-broken_qa2jza.svg";
 export const maximizeIcon =
   "https://res.cloudinary.com/de2vjcr29/image/upload/v1753976029/maximize-3_ycgnho.svg";
+
+export const propertyIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754045615/buildings_z7jg31.svg";
+export const calenderIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754045616/calendar_ffegzq.svg";
+export const confirmedLocationIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754045616/location-tick_dih42m.svg";
+export const paymentIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754045615/dollar-square_nhdexy.svg";
