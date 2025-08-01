@@ -5,7 +5,7 @@ import {
   statsDesktopImageUrl,
   statsMobileImageUrl,
 } from "../../../constants/images";
-import StatsCard from "../../../components/StatsCard";
+import StatsCard from "../components/StatsCard";
 
 const SectionTwo = () => {
   return (

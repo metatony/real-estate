@@ -1,5 +1,5 @@
 import React from "react";
-import { diagonalArrow } from "../constants/icons";
+import { diagonalArrow } from "../../../constants/icons";
 
 const StatsCard = (props) => {
   return (
