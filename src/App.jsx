@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import { GlobalProvider } from "./provider/GlobalProvider";
 import Agent from "./pages/Agent/Agent";
 import Blog from "./pages/Blog/Blog";
+import Join from "./pages/Join/Join";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route path="/propertyPage/:id" element={<PropertyPage />} />
             <Route path="/agent" element = {<Agent/>} />
             <Route path="/blog" element = {<Blog/>} />
+            <Route path="/join" element = {<Join/>} />
+            <Route path="/about" element = {<About/>} />
           </Routes>
           <Footer />
         </BrowserRouter>

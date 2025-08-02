@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesCard = (props) => {
   return (
-    <article className="flex flex-col p-4 lg:p-6 rounded-lg border border-[#E5E5E5]">
+    <article className="flex flex-col p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
       <img
         className=""
         src={props.image}
