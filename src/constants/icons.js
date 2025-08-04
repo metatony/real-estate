@@ -16,3 +16,5 @@ export const confirmedLocationIcon = "https://res.cloudinary.com/de2vjcr29/image
 export const paymentIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754045615/dollar-square_nhdexy.svg";
 
 export const searchIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754068059/Search_Icon_Container_ax1h9z.svg";
+
+export const downArrowIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754347492/arrow-down_zt3wfb.svg";

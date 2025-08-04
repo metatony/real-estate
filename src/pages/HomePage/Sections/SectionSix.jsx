@@ -13,14 +13,14 @@ const SectionSix = () => {
         }
       />
 
-      <section className="mt-10 ">
-        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 border p-6 rounded-2xl border-[#E5E5E5] w-full">
+      <section className="mt-10 h-full">
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 border p-6 rounded-2xl border-[#E5E5E5] w-full ">
           {/* picture grid  cols-1*/}
-          <section>
+          <section className="">
             <img
               src="https://res.cloudinary.com/de2vjcr29/image/upload/v1754313621/Footer_Image_avmg6e.png"
               alt="customer service advisor image"
-              className="lg:col-span-1 w-full"
+              className="lg:col-span-1 lg:h-[546px] lg:w-[408px] h-full w-full"
             />
           </section>
 
