@@ -8,7 +8,7 @@ import SectionSix from "./Sections/SectionSix";
 
 const HomePage = () => {
   return (
-    <main className="">
+    <main>
       <SectionOne />
       <SectionTwo />
       <SectionThree />

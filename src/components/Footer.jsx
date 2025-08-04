@@ -48,7 +48,7 @@ const Footer = () => {
 
       <div className="flex flex-col lg:flex-row justify-center lg:items-center text-[#A4A4A4] font-light space-y-4">
         <p>
-          &copy; Website built by <span className="text-black">Metatony</span>
+          &copy; website built by <span className="text-black">metatony</span>
         </p>
         {/* <p>Privacy Policy & Terms Of Use</p> */}
       </div>

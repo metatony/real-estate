@@ -10,7 +10,7 @@ const Blog = () => {
   const { data, loading } = useGlobal();
 
   return (
-    <main className="">
+    <main>
       <section className="py-10 lg:py-20">
         <SectionHeader
           sectionName={"Our Agents"}
