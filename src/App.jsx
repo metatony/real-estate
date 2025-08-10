@@ -16,14 +16,14 @@ function App() {
   return (
     <GlobalProvider>
       <HelmetProvider context={helmetContext}>
-        <div className="px-4 container mx-auto ">
+        <div className="px-4 container mx-auto">
           <BrowserRouter>
             <ScrollToTop />
             <Navbar />
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/propertyPage" element={<PropertyPage />} />
-              <Route path="/propertyPage/:id" element={<PropertyPage />} />
+              <Route path="/property" element={<PropertyPage />} />
+              <Route path="/property/:id" element={<PropertyPage />} />
               <Route path="/agent" element={<Agent />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/join" element={<Join />} />

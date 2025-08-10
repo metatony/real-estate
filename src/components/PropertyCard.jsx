@@ -27,8 +27,8 @@ const PropertyCard = () => {
 
                 {/* title and price */}
                 <div className="flex justify-between item-center">
-                    <p className="text-2xl lg:text-3xl mt-4 mb-2">{item.title}</p>
-                    <p className="text-2xl lg:text-3xl mt-4 mb-2">{item.price}</p>
+                    <p className="lg:text-xl mt-4 mb-2">{item.title}</p>
+                    <p className="lg:text-xl mt-4 mb-2">{item.price}</p>
                 </div>
 
                 {/* location */}
@@ -41,19 +41,19 @@ const PropertyCard = () => {
 
                 <div className="flex items-center justify-between mt-5">
 
-                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-2 px-3 rounded-2xl">
+                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
                         <img width={20} height={20} src={bedIcon} alt="location icon" />
-                        <p className="text-lg lg:text-xl text-[#A4A4A4]">{item.bedCount}</p>
+                        <p className="text-[#A4A4A4]">{item.bedCount}</p>
                     </div>
 
-                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-2 px-3 rounded-2xl">
+                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
                         <img width={20} height={20} src={bathIcon} alt="location icon" />
-                        <p className="text-lg lg:text-xl text-[#A4A4A4]">{item.bathCount}</p>
+                        <p className="text-[#A4A4A4]">{item.bathCount}</p>
                     </div>
 
-                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-2 px-3 rounded-2xl">
+                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
                         <img width={20} height={20} src={maximizeIcon} alt="location icon" />
-                        <p className="text-lg lg:text-xl text-[#A4A4A4]">{item.squareFootage}</p>
+                        <p className="text-[#A4A4A4]">{item.squareFootage}</p>
                     </div>
 
                 </div>

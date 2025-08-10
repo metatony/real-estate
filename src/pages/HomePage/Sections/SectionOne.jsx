@@ -1,7 +1,7 @@
 import React from "react";
 import { dark500 } from "../../../constants/themes";
 
-const SectionOne = () => {
+const SectionOne = ({ onGetStarted }) => {
   return (
     <section
       className="hero h-screen flex flex-col pb-10 "
@@ -25,6 +25,7 @@ const SectionOne = () => {
       <div className="flex items-center justify-center space-x-4">
         <button
           className={`border lg:border-none border-gray-200 bg-[${dark500}] text-white py-2 lg:py-3 px-6 rounded-md`}
+          onClick={onGetStarted}
         >
           Get Started
         </button>

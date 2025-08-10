@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import ProcessCard from "../components/ProcessCard";
 import {
@@ -8,9 +8,9 @@ import {
   propertyIcon,
 } from "../../../constants/icons";
 
-const SectionFive = () => {
+const SectionFive = forwardRef((props, ref) => {
   return (
-    <section className="py-10 lg:py-20">
+    <section className="py-10 lg:py-20" ref={ref}>
       <SectionHeader
         sectionName={"How It Works"}
         title={"Journey to Achieve Property Success"}
@@ -59,6 +59,6 @@ const SectionFive = () => {
       </section>
     </section>
   );
-};
+});
 
 export default SectionFive;
