@@ -3,12 +3,19 @@ import SectionHeader from "../../components/SectionHeader";
 import { useGlobal } from "../../provider/GlobalProvider";
 import AgentCard from "./components/AgentCard";
 import { BounceLoader } from "react-spinners";
+import SEO from "../../components/SEO";
 
 const Agent = () => {
   const { data, loading } = useGlobal();
 
   return (
     <main>
+      <SEO
+        title="Our Agents | Rubble Real Estate"
+        description="Meet our dedicated agents who are here to help you find your dream property."
+        name="Rubble Real Estate"
+        type="website"
+      />
       <section className="py-10 lg:py-20">
         <SectionHeader
           sectionName={"Our Agents"}

@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { useGlobal } from "../../provider/GlobalProvider";
 import BlogCard from "./components/BlogCard";
 import SectionHeader from "../../components/SectionHeader";
 import { BounceLoader } from "react-spinners";
 import { searchIcon } from "../../constants/icons";
 import BlogTiles from "./components/BlogTiles";
+import SEO from "../../components/SEO";
 
 const Blog = () => {
   const { data, loading } = useGlobal();
+  const [search, setSearch] = useState("");
+
+  const filteredBlogs = data.blog
+    ? data.blog.filter((item) =>
+        item.title.toLowerCase().includes(search.toLowerCase())
+      )
+    : [];
 
   return (
     <main>
+      <SEO
+        title="Blog | Rubble Real Estate"
+        description="SRead the latest real estate news, tips, and guides from Rubble Real Estate. Stay informed and inspired for your property journey."
+        name="Rubble Real Estate"
+        type="website"
+      />
       <section className="py-10 lg:py-20">
         <SectionHeader
           sectionName={"Our Agents"}
@@ -25,7 +39,14 @@ const Blog = () => {
         <section className="flex flex-col items-center justify-center">
           {/* search bar */}
           <div className=" flex items-center justify-between w-full lg:w-[511px] border border-[#E5E5E5] rounded-xl text-[#A4A4A4] py-1.5 pr-1.5 pl-4 my-4  ">
-            <input className="w-full focus:outline-none mr-2" type="text" placeholder="Search" />
+            <input
+              className="w-full focus:outline-none mr-2"
+              type="text"
+              placeholder="Search"
+              aria-label="Search blog posts"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
 
             <span className="flex items-center justify-center p-2 bg-[#292929] rounded-xl">
               <img
@@ -46,17 +67,19 @@ const Blog = () => {
             <div className="lg:col-span-3 flex items-center justify-center h-[50vh]">
               <BounceLoader />;
             </div>
+          ) : filteredBlogs.length > 0 ? (
+            filteredBlogs.map((item) => (
+              <BlogCard
+                key={item.id}
+                title={item.title}
+                image={item.desktopImageUrl}
+                description={item.description}
+              />
+            ))
           ) : (
-            data.blog.map(function (item) {
-              return (
-                <BlogCard
-                  key={item.id}
-                  title={item.title}
-                  image={item.desktopImageUrl}
-                  description={item.description}
-                />
-              );
-            })
+            <div className="lg:col-span-3 text-center text-gray-500">
+              No blog posts found.
+            </div>
           )}
         </section>
       </section>

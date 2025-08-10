@@ -9,26 +9,30 @@ import Agent from "./pages/Agent/Agent";
 import Blog from "./pages/Blog/Blog";
 import Join from "./pages/Join/Join";
 import About from "./pages/About/About";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
+  const helmetContext = {};
   return (
     <GlobalProvider>
-      <div className="px-4 container mx-auto ">
-        <BrowserRouter>
-          <ScrollToTop/>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/propertyPage" element={<PropertyPage />} />
-            <Route path="/propertyPage/:id" element={<PropertyPage />} />
-            <Route path="/agent" element = {<Agent/>} />
-            <Route path="/blog" element = {<Blog/>} />
-            <Route path="/join" element = {<Join/>} />
-            <Route path="/about" element = {<About/>} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
-      </div>
+      <HelmetProvider context={helmetContext}>
+        <div className="px-4 container mx-auto ">
+          <BrowserRouter>
+            <ScrollToTop />
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/propertyPage" element={<PropertyPage />} />
+              <Route path="/propertyPage/:id" element={<PropertyPage />} />
+              <Route path="/agent" element={<Agent />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/join" element={<Join />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
+        </div>
+      </HelmetProvider>
     </GlobalProvider>
   );
 }
