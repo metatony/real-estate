@@ -9,7 +9,7 @@ const Footer = () => {
         {/* logo area */}
         <div className="flex flex-col space-y-4 lg:col-span-4 font-light text-[#A4A4A4] lg:w-[428px] w-full">
           <div>
-            <img src={desktopLogoUrl} alt="logo" />
+            <img src={desktopLogoUrl} alt="logo"/>
           </div>
           <p className="text-lg lg:text-xl">
             We are dedicated to helping you find the perfect property with ease.
