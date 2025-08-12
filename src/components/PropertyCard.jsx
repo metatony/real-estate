@@ -21,7 +21,7 @@ const PropertyCard = () => {
             <article key={item.id} className="flex flex-col p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
               <Link to={`/property/${item.id}`}>
                 <img
-                  className=""
+                  className="w-full"
                   src={item.desktopImageUrl}
                   alt="Services image of real estate agents"
                 />
