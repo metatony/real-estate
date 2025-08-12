@@ -32,13 +32,13 @@ const PropertyDetail = () => {
           <img
             src={house.desktopImageUrl}
             alt={house.title}
-            className="w-full lg:h-[592px] object-cover"
+            className="w-full object-cover"
             loading="lazy"
           />
         </div>
-        <div className="lg:col-span-1 grid lg:grid-cols-1 gap-6 justify-between items-center lg:h-[592px] ">
-          <img src={imageGallery1} alt={house.title} className="w-full h-full object-cover" loading="lazy" />
-          <img src={imageGallery2} alt={house.title} className="w-full h-full object-cover" loading="lazy" />
+        <div className="lg:col-span-1 flex flex-col gap-6 justify-between items-center ">
+          <img src={imageGallery1} alt={house.title} className="w-full flex-1" loading="lazy" />
+          <img src={imageGallery2} alt={house.title} className="w-full flex-1" loading="lazy" />
         </div>
       </section>
 
