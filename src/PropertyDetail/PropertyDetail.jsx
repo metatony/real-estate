@@ -27,7 +27,7 @@ const PropertyDetail = () => {
       />
 
       {/* image gallery */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6 bg-red-300">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
         <div className="lg:col-span-2 w-full">
           <img
             src={house.desktopImageUrl}
@@ -36,7 +36,7 @@ const PropertyDetail = () => {
             loading="lazy"
           />
         </div>
-        <div className="lg:col-span-1 flex flex-col gap-6 justify-between items-center ">
+        <div className="lg:col-span-1 flex lg:flex-col gap-6 justify-between items-center">
           <img src={imageGallery1} alt={house.title} className="w-full flex-1" loading="lazy" />
           <img src={imageGallery2} alt={house.title} className="w-full flex-1" loading="lazy" />
         </div>
