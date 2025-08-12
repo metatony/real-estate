@@ -7,8 +7,8 @@ const BlogCard = (props) => {
         <img className="w-full" src={props.image} alt="blog cover image" />
       </div>
 
-      <div className="pt-3 text-lg">
-        <p className="lg:text-2xl">{props.title}</p>
+      <div className="pt-3">
+        <p className="lg:text-xl">{props.title}</p>
         <p className="text-[#A4A4A4] lg:text-xl pt-2">{props.description}</p>
       </div>
     </section>

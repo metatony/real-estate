@@ -32,7 +32,7 @@ const PropertyDetail = () => {
           <img
             src={house.desktopImageUrl}
             alt={house.title}
-            className="w-full h-full bg-cover"
+            className="w-full lg:h-[592px]"
             loading="lazy"
           />
         </div>

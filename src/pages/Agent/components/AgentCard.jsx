@@ -7,7 +7,7 @@ const AgentCard = (props) => {
             <img className='w-full' src={props.image} alt="agent's image" />
         </div>
 
-        <div className="flex justify-between items-center pt-3 text-lg lg:text-2xl ">
+        <div className="flex justify-between items-center pt-3 lg:text-xl ">
             <p>{props.name}</p>
             <p>{props.listings}</p>
         </div>
