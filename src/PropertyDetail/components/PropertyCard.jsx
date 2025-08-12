@@ -1,12 +1,7 @@
 import React from "react";
-import { useGlobal } from "../../../provider/GlobalProvider";
-import {
-  bathIcon,
-  bedIcon,
-  locationIcon,
-  maximizeIcon,
-} from "../../../constants/icons";
 import { BounceLoader } from "react-spinners";
+import { useGlobal } from "../../provider/GlobalProvider";
+import { maximizeIcon, bathIcon, bedIcon, locationIcon } from "../../constants/icons";
 import { Link } from "react-router";
 
 const PropertyCard = () => {
@@ -15,13 +10,17 @@ const PropertyCard = () => {
   if (loading)
     return (
       <div className="flex items-center justify-center h-[50vh]">
-        <BounceLoader />
+        <BounceLoader />;
       </div>
     );
 
+    const randomItems = [...data.properties].sort(function () {
+      return Math.random() - 0.5;
+    });
+
   return (
-    <section className="grid grid-cols-1 md:gap-4 gap-6 md:grid-cols-2 w-full">
-      {data.properties.map(function (item) {
+    <section className="grid grid-cols-1 gap-5 lg:grid-cols-3 w-full">
+      {randomItems.slice(0, 3).map(function (item) {
         return (
           <article
             key={item.id}
@@ -31,7 +30,8 @@ const PropertyCard = () => {
               <img
                 className=""
                 src={item.desktopImageUrl}
-                alt="Property images"
+                alt="Services image of real estate agents"
+                loading="lazy"
               />
             </Link>
             <div className="font-light">
@@ -49,12 +49,14 @@ const PropertyCard = () => {
                   src={locationIcon}
                   alt="location icon"
                 />
-                <p className="lg:text-base text-[#A4A4A4]">{item.location}</p>
+                <p className="text-lg lg:text-xl text-[#A4A4A4]">
+                  {item.location}
+                </p>
               </div>
 
               {/* facilities */}
 
-              <div className="flex items-center justify-between mt-5 text-base">
+              <div className="flex items-center justify-between mt-5">
                 <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
                   <img
                     width={20}

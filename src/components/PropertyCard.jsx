@@ -2,6 +2,7 @@ import React from "react";
 import { useGlobal } from "../provider/GlobalProvider";
 import { bathIcon, bedIcon, locationIcon, maximizeIcon } from "../constants/icons";
 import { BounceLoader } from "react-spinners";
+import { Link } from "react-router";
 
 const PropertyCard = () => {
   const { data, loading } = useGlobal();
@@ -18,11 +19,13 @@ const PropertyCard = () => {
       {data.properties.slice(0,6).map(function (item) {
         return (
             <article key={item.id} className="flex flex-col p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
-              <img
-                className=""
-                src={item.desktopImageUrl}
-                alt="Services image of real estate agents"
-              />
+              <Link to={`/property/${item.id}`}>
+                <img
+                  className=""
+                  src={item.desktopImageUrl}
+                  alt="Services image of real estate agents"
+                />
+              </Link>
               <div className="font-light">
 
                 {/* title and price */}

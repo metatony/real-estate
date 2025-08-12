@@ -10,6 +10,7 @@ import Blog from "./pages/Blog/Blog";
 import Join from "./pages/Join/Join";
 import About from "./pages/About/About";
 import { HelmetProvider } from "react-helmet-async";
+import PropertyDetail from "./PropertyDetail/PropertyDetail";
 
 function App() {
   const helmetContext = {};
@@ -23,7 +24,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/property" element={<PropertyPage />} />
-              <Route path="/property/:id" element={<PropertyPage />} />
+              <Route path="/property/:id" element={<PropertyDetail />} />
               <Route path="/agent" element={<Agent />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/join" element={<Join />} />

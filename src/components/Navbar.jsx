@@ -23,8 +23,8 @@ const Navbar = () => {
               key={item.page}
               to={item.link}
               className={({ isActive }) =>
-                `hidden lg:block hover:font-semibold ${
-                  isActive ? "font-bold" : ""
+                `hidden lg:block hover:font-normal ${
+                  isActive ? "font-normal" : ""
                 }`
               }
             >

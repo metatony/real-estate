@@ -25,3 +25,7 @@ export const servicesImageUrl5 =
 export const servicesImageUrl6 =
   "https://res.cloudinary.com/de2vjcr29/image/upload/v1753970139/Service_Item_Image-2_mvkfag.png";
 
+export const imageGallery1 =
+  "https://res.cloudinary.com/de2vjcr29/image/upload/v1754966051/Small_Image_ocmnhd.png";
+export const imageGallery2 =
+  "https://res.cloudinary.com/de2vjcr29/image/upload/v1754966051/Small_Image2_kxx2or.png";
