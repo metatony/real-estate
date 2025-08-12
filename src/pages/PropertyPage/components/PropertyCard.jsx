@@ -29,7 +29,7 @@ const PropertyCard = () => {
           >
             <Link to={`/property/${item.id}`}>
               <img
-                className=""
+                className="w-full"
                 src={item.desktopImageUrl}
                 alt="Property images"
               />
