@@ -36,10 +36,16 @@ const PropertyDetail = () => {
             loading="lazy"
           />
         </div>
-        <div className="lg:col-span-1 flex lg:flex-col gap-6 justify-between items-center">
-          <img src={imageGallery1} alt={house.title} className="w-full flex-1" loading="lazy" />
-          <img src={imageGallery2} alt={house.title} className="w-full flex-1" loading="lazy" />
+        <div className="flex lg:flex-col gap-6 lg:col-span-1 justify-between items-center">
+          <div className="w-full ">
+            <img src={imageGallery1} alt={house.title} className="lg:h-[312px] w-full" loading="lazy" />
+          </div>
+          <div className="w-full ">
+            <img src={imageGallery2} alt={house.title} className="lg:h-[312px] w-full" loading="lazy" />
+          </div>
+    
         </div>
+        
       </section>
 
       <SectionHeader
@@ -54,3 +60,8 @@ const PropertyDetail = () => {
 };
 
 export default PropertyDetail;
+
+{/* <div className="flex lg:flex-col gap-6 justify-between items-center">
+            <img src={imageGallery1} alt={house.title} className="w-full flex-1" loading="lazy" />
+            <img src={imageGallery2} alt={house.title} className="w-full flex-1" loading="lazy" />
+          </div> */}
