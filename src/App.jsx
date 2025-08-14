@@ -10,7 +10,7 @@ import Blog from "./pages/Blog/Blog";
 import Join from "./pages/Join/Join";
 import About from "./pages/About/About";
 import { HelmetProvider } from "react-helmet-async";
-import PropertyDetail from "./PropertyDetail/PropertyDetail";
+import PropertyDetail from "./pages/PropertyDetail/PropertyDetail";
 
 function App() {
   const helmetContext = {};

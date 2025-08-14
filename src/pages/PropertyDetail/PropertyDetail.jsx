@@ -1,10 +1,10 @@
 import React from "react";
-import SEO from "../components/SEO";
-import SectionHeader from "../components/SectionHeader";
+import SEO from "../../components/SEO";
+import SectionHeader from "../../components/SectionHeader";
 import PropertyCard from "./components/PropertyCard";
-import { useGlobal } from "../provider/GlobalProvider";
+import { useGlobal } from "../../provider/GlobalProvider";
 import { useParams } from "react-router";
-import { imageGallery1, imageGallery2 } from "../constants/images";
+import { imageGallery1, imageGallery2 } from "../../constants/images";
 import { BounceLoader } from "react-spinners";
 
 const PropertyDetail = () => {
@@ -37,10 +37,19 @@ const PropertyDetail = () => {
           />
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-1 gap-6 h-full">
-            <img src={imageGallery1} alt={house.title} className="w-full h-full object-cover rounded-2xl" loading="lazy" />
-            <img src={imageGallery2} alt={house.title} className="w-full h-full object-cover rounded-2xl" loading="lazy" /> 
+          <img
+            src={imageGallery1}
+            alt={house.title}
+            className="w-full h-full object-cover rounded-2xl"
+            loading="lazy"
+          />
+          <img
+            src={imageGallery2}
+            alt={house.title}
+            className="w-full h-full object-cover rounded-2xl"
+            loading="lazy"
+          />
         </div>
-        
       </section>
 
       <SectionHeader
@@ -55,8 +64,3 @@ const PropertyDetail = () => {
 };
 
 export default PropertyDetail;
-
-{/* <div className="flex lg:flex-col gap-6 justify-between items-center">
-            <img src={imageGallery1} alt={house.title} className="w-full flex-1" loading="lazy" />
-            <img src={imageGallery2} alt={house.title} className="w-full flex-1" loading="lazy" />
-          </div> */}

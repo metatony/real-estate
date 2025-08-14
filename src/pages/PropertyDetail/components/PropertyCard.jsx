@@ -1,7 +1,12 @@
 import React from "react";
 import { BounceLoader } from "react-spinners";
-import { useGlobal } from "../../provider/GlobalProvider";
-import { maximizeIcon, bathIcon, bedIcon, locationIcon } from "../../constants/icons";
+import { useGlobal } from "../../../provider/GlobalProvider";
+import {
+  maximizeIcon,
+  bathIcon,
+  bedIcon,
+  locationIcon,
+} from "../../../constants/icons";
 import { Link } from "react-router";
 
 const PropertyCard = () => {
@@ -14,9 +19,9 @@ const PropertyCard = () => {
       </div>
     );
 
-    const randomItems = [...data.properties].sort(function () {
-      return Math.random() - 0.5;
-    });
+  const randomItems = [...data.properties].sort(function () {
+    return Math.random() - 0.5;
+  });
 
   return (
     <section className="grid grid-cols-1 gap-5 lg:grid-cols-3 w-full">
