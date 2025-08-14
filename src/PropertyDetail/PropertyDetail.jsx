@@ -36,14 +36,9 @@ const PropertyDetail = () => {
             loading="lazy"
           />
         </div>
-        <div className="flex lg:flex-col gap-6 lg:col-span-1 justify-between items-center">
-          <div className="w-full ">
-            <img src={imageGallery1} alt={house.title} className="lg:h-[312px] w-full" loading="lazy" />
-          </div>
-          <div className="w-full ">
-            <img src={imageGallery2} alt={house.title} className="lg:h-[312px] w-full" loading="lazy" />
-          </div>
-    
+        <div className="grid grid-cols-2 lg:grid-cols-1 gap-6 h-full">
+            <img src={imageGallery1} alt={house.title} className="w-full h-full object-cover rounded-2xl" loading="lazy" />
+            <img src={imageGallery2} alt={house.title} className="w-full h-full object-cover rounded-2xl" loading="lazy" /> 
         </div>
         
       </section>
