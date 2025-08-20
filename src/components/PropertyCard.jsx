@@ -45,8 +45,8 @@ const PropertyCard = () => {
               {/* location */}
               <section className="flex items-center space-x-1">
                 <img
-                  width={20}
-                  height={20}
+                  width={18}
+                  height={18}
                   src={locationIcon}
                   alt="location icon"
                 />
@@ -56,19 +56,14 @@ const PropertyCard = () => {
               {/* facilities */}
               <section className="flex items-center justify-between mt-5">
                 <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
-                  <img
-                    width={20}
-                    height={20}
-                    src={bedIcon}
-                    alt="bed icon"
-                  />
+                  <img width={18} height={18} src={bedIcon} alt="bed icon" />
                   <p className="paragraph-text">{item.bedCount}</p>
                 </div>
 
                 <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
                   <img
-                    width={20}
-                    height={20}
+                    width={18}
+                    height={18}
                     src={bathIcon}
                     alt="bathtub icon"
                   />
@@ -77,7 +72,8 @@ const PropertyCard = () => {
 
                 <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
                   <img
-                    height={20}
+                    height={18}
+                    width={18}
                     src={maximizeIcon}
                     alt="square footage icon"
                   />

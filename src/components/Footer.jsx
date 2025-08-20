@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="py-10 lg:py-20">
       <section className="grid grid-cols-1 lg:grid-cols-8 text-lg lg:text-xl w-full">
         {/* logo area */}
-        <section className="flex flex-col space-y-4 lg:col-span-4 lg:w-[428px] w-full">
+        <section className="flex flex-col space-y-4 lg:col-span-3 lg:w-[428px] w-full">
           <div>
             <img src={desktopLogoUrl} alt="logo" />
           </div>
-          <p className="paragraph-text">
+          <p className="paragraph-text mt-5 mb-2">
             We are dedicated to helping you find the perfect property with ease.
             Explore a variety of options and let our expert team guide you to
             your ideal home in a efficient way.
@@ -19,13 +19,13 @@ const Footer = () => {
         </section>
 
         {/* footer links */}
-        <section className="lg:col-span-4 w-full">
+        <section className="lg:col-span-5 w-full">
           <section className="grid grid-cols-2 lg:grid-cols-4 pt-7 lg:pt-0 lg:justify-items-end gap-10 lg:gap-20 w-full text-lg">
             {footerMenu.map(function (item) {
               return (
                 <div
                   key={item.title}
-                  className="font-light flex flex-col bg-green"
+                  className="font-[400] flex flex-col bg-green"
                 >
                   <p className="pb-6">{item.title}</p>
                   <div className="flex flex-col space-y-4 paragraph-text">
