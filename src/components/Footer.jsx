@@ -7,20 +7,20 @@ const Footer = () => {
     <footer className="py-10 lg:py-20">
       <section className="grid grid-cols-1 lg:grid-cols-8 text-lg lg:text-xl w-full">
         {/* logo area */}
-        <div className="flex flex-col space-y-4 lg:col-span-4 font-light text-[#A4A4A4] lg:w-[428px] w-full">
+        <section className="flex flex-col space-y-4 lg:col-span-4 lg:w-[428px] w-full">
           <div>
-            <img src={desktopLogoUrl} alt="logo"/>
+            <img src={desktopLogoUrl} alt="logo" />
           </div>
-          <p className="text-lg lg:text-xl">
+          <p className="paragraph-text">
             We are dedicated to helping you find the perfect property with ease.
             Explore a variety of options and let our expert team guide you to
             your ideal home in a efficient way.
           </p>
-        </div>
+        </section>
 
         {/* footer links */}
-        <div className="lg:col-span-4 w-full">
-          <div className="grid grid-cols-2 lg:grid-cols-4 pt-7 lg:pt-0 lg:justify-items-end gap-10 lg:gap-20 w-full text-lg">
+        <section className="lg:col-span-4 w-full">
+          <section className="grid grid-cols-2 lg:grid-cols-4 pt-7 lg:pt-0 lg:justify-items-end gap-10 lg:gap-20 w-full text-lg">
             {footerMenu.map(function (item) {
               return (
                 <div
@@ -28,7 +28,7 @@ const Footer = () => {
                   className="font-light flex flex-col bg-green"
                 >
                   <p className="pb-6">{item.title}</p>
-                  <div className="flex flex-col space-y-4 text-[#A4A4A4]">
+                  <div className="flex flex-col space-y-4 paragraph-text">
                     {item.links.map(function (link) {
                       return (
                         <a key={link.name} href={link.url}>
@@ -40,17 +40,16 @@ const Footer = () => {
                 </div>
               );
             })}
-          </div>
-        </div>
+          </section>
+        </section>
       </section>
 
       <hr className="w-full border-t mt-20 mb-6 border-[#E5E5E5]" />
 
-      <div className="flex flex-col lg:flex-row justify-center lg:items-center text-[#A4A4A4] font-light space-y-4">
+      <div className="flex flex-col lg:flex-row justify-center lg:items-center font-light space-y-4">
         <p>
-          &copy; website built by <span className="text-black">metatony</span>
+          &copy; website built by <span>metatony</span>
         </p>
-        {/* <p>Privacy Policy & Terms Of Use</p> */}
       </div>
     </footer>
   );

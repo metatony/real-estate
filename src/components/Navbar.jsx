@@ -34,10 +34,10 @@ const Navbar = () => {
         </li>
 
         <li className="hidden space-x-2 lg:flex">
-          <button className="border border-gray-200 py-1 px-2 rounded-md">
+          <button className="border-color-gray py-1 px-2">
             Sign In
           </button>
-          <button className="border py-1 px-4 rounded-md bg-[#292929] text-white border-none">
+          <button className="border py-1 px-4 rounded-xl bg-[#292929] text-white border-none">
             Book a Call
           </button>
         </li>

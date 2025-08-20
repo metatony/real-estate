@@ -10,7 +10,6 @@ export const GlobalProvider = ({ children }) => {
   const apiKey = import.meta.env.VITE_RUBBLE_API_KEY;
 
   useEffect(() => {
-    console.log("Loaded API key:", apiKey);
 
     axios
       .get(
@@ -21,16 +20,16 @@ export const GlobalProvider = ({ children }) => {
         if (response.status !== 200) {
           throw new Error(`Error: ${response.status}`);
         }
-        console.log(response.data);
+        // console.log(response.data);
 
-        // Delay for 4 seconds before showing content
+        // Delay for 2 seconds before showing content
         setTimeout(() => {
           setData(response.data);
           setLoading(false);
         }, 2000);
       })
       .catch(function (error) {
-        console.error("Error fetching data:", error);
+        // console.error("Error fetching data:", error);
         setLoading(false);
       });
   }, []);

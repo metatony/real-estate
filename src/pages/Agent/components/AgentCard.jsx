@@ -1,22 +1,22 @@
 import React from 'react'
 
-const AgentCard = (props) => {
+const AgentCard = ({image, name, listings}) => {
   return (
-    <section className="font-light border border-[#E5E5E5] rounded-2xl p-4  lg:p-6">
+    <section className="font-light border-color-gray p-4 lg:p-6">
         <div>
-            <img className='w-full' src={props.image} alt="agent's image" />
+            <img className='w-full' src={image} alt="agent's image" />
         </div>
 
-        <div className="flex justify-between items-center pt-3 lg:text-xl ">
-            <p>{props.name}</p>
-            <p>{props.listings}</p>
+        <div className="flex justify-between items-center card-header-text pt-3 ">
+            <p>{name}</p>
+            <p>{listings}</p>
         </div>
 
         <div>
-            <p className="text-[#A4A4A4]">Real Estate Agent</p>
+            <p className="paragraph-text">Real Estate Agent</p>
         </div>
         
-        <button className="text-center lg:text-xl mt-3 py-3 border border-[#E5E5E5] w-full rounded-xl hover:bg-[#292929] hover:text-white">View Details</button>
+        <button className="text-center lg:text-xl mt-3 py-3 border-color-gray w-full hover:bg-[#292929] hover:text-white">View Details</button>
 
     </section>
   )

@@ -1,22 +1,16 @@
 import React from "react";
 
-const ProcessCard = (props) => {
+const ProcessCard = ({ icon, alt, stepNumber, title }) => {
   return (
-    <article className="font-light border border-[#E5E5E5] p-6 rounded-2xl">
+    <article className="border-color-gray p-6">
       <div className="flex justify-between items-center">
-        <div className="p-3 border border-[#E5E5E5] rounded-xl">
-          <img
-            className=" "
-            src={props.icon}
-            alt={props.alt}
-            width={20}
-            height={20}
-          />
+        <div className="p-3 border-color-gray">
+          <img src={icon} alt={alt} width={20} height={20} />
         </div>
-        <p className="text-2xl lg:text-3xl">{props.stepNumber}</p>
+        <h3 className="card-header-text">{stepNumber}</h3>
       </div>
-      <p className="text-2xl lg:text-3xl mt-[50px]">{props.title}</p>
-      <p className="text-lg lg:text-2xl text-[#A4A4A4] pt-2">
+      <h3 className="card-header-text mt-[50px]">{title}</h3>
+      <p className="paragraph-text pt-2">
         Find a wide selection of properties that perfectly suit your needs and
         preferences. Browse a comprehensive list of properties that offer
         detailed information.

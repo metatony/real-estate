@@ -29,70 +29,66 @@ const PropertyCard = () => {
         return (
           <article
             key={item.id}
-            className="flex flex-col p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]"
+            className="flex flex-col p-4 lg:p-6 border-color-gray"
           >
             <Link to={`/property/${item.id}`}>
               <img
                 className="w-full"
                 src={item.desktopImageUrl}
-                alt="Services image of real estate agents"
-                loading="lazy"
+                alt={`Property image ${item.id}`}
               />
             </Link>
-            <div className="font-light">
+
+            <section className="font-light">
               {/* title and price */}
-              <div className="flex justify-between item-center">
-                <p className="lg:text-xl mt-4 mb-2">{item.title}</p>
-                <p className="lg:text-xl mt-4 mb-2">{item.price}</p>
-              </div>
+              <section className="flex justify-between item-center card-header-text pt-4 pb-2">
+                <h3>{item.title}</h3>
+                <p>{item.price}</p>
+              </section>
 
               {/* location */}
-              <div className="flex items-center space-x-1">
+              <section className="flex items-center space-x-1">
                 <img
                   width={20}
                   height={20}
                   src={locationIcon}
                   alt="location icon"
                 />
-                <p className="text-lg lg:text-xl text-[#A4A4A4]">
-                  {item.location}
-                </p>
-              </div>
+                <p className="paragraph-text">{item.location}</p>
+              </section>
 
               {/* facilities */}
-
-              <div className="flex items-center justify-between mt-5">
-                <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
+              <section className="flex items-center justify-between mt-5">
+                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
                   <img
                     width={20}
                     height={20}
                     src={bedIcon}
                     alt="location icon"
                   />
-                  <p className="text-[#A4A4A4]">{item.bedCount}</p>
+                  <p className="paragraph-text">{item.bedCount}</p>
                 </div>
 
-                <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
+                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
                   <img
                     width={20}
                     height={20}
                     src={bathIcon}
-                    alt="location icon"
+                    alt="bathtub icon"
                   />
-                  <p className="text-[#A4A4A4]">{item.bathCount}</p>
+                  <p className="paragraph-text">{item.bathCount}</p>
                 </div>
 
-                <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
+                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
                   <img
-                    width={20}
                     height={20}
                     src={maximizeIcon}
-                    alt="location icon"
+                    alt="square footage icon"
                   />
-                  <p className="text-[#A4A4A4]">{item.squareFootage}</p>
+                  <p className="paragraph-text">{item.squareFootage}</p>
                 </div>
-              </div>
-            </div>
+              </section>
+            </section>
           </article>
         );
       })}

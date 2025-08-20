@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "../../../components/SectionHeader";
-import Form from "../../../components/Form";
+import CustomForm from "../../../components/CustomForm";
 
 const SectionSix = () => {
   return (
@@ -14,7 +14,7 @@ const SectionSix = () => {
       />
 
       <section className="mt-10 h-full">
-        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 border p-6 rounded-2xl border-[#E5E5E5] w-full ">
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 border-color-gray p-6 w-full ">
           {/* picture grid  cols-1*/}
           <section className="">
             <img
@@ -26,7 +26,7 @@ const SectionSix = () => {
 
           {/* from grid cols-2 */}
           <section className="lg:col-span-2">
-            <Form />
+            <CustomForm />
           </section>
         </section>
       </section>

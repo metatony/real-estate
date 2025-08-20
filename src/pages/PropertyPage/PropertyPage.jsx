@@ -27,7 +27,6 @@ const PropertyPage = () => {
         <FilterArea />
 
         {/* property listings */}
-
         <section className="lg:col-span-2">
           <PropertyCard />
         </section>

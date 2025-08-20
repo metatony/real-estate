@@ -1,16 +1,15 @@
 import React from "react";
 
-const ServicesCard = (props) => {
+const ServicesCard = ({ image, title, description }) => {
   return (
-    <article className="flex flex-col p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
+    <article className="border-color-gray flex flex-col p-4 lg:p-6 ">
       <img
-        className=""
-        src={props.image}
+        src={image}
         alt="Services image of real estate agents"
       />
-      <div className="text-center font-light">
-        <h2 className="text-2xl lg:text-3xl mt-4 mb-2">{props.title}</h2>
-        <p className="text-lg lg:text-xl text-[#A4A4A4]">{props.description}</p>
+      <div className="text-center">
+        <h3 className="card-header-text mt-4 mb-2">{title}</h3>
+        <p className="paragraph-text">{description}</p>
       </div>
     </article>
   );

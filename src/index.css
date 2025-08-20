@@ -5,16 +5,45 @@ body {
 }
 
 .hero {
+  position: relative;
   background-image: url("assets/desktopBackground.png");
-  border-radius:  20px;
+  border-radius: 20px;
   background-size: cover;
   background-position: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* 15% black overlay */
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: 1;
 }
 
 @media (max-width: 1023px) {
   .hero {
     background-image: url("assets/mobileBackground.png");
-    background-size: cover;
-    background-position: center;
   }
 }
+
+@layer components {
+  .paragraph-text {
+    @apply text-[#292929] text-lg lg:text-lg font-light;
+  }
+
+  .card-header-text {
+    @apply text-2xl lg:text-2xl font-[400] text-[#292929];
+  }
+
+  .section-header-title {
+    @apply text-3xl lg:text-6xl text-[#292929] font-[400];
+  }
+
+  .border-color-gray {
+    @apply border border-[#E5E5E5] rounded-xl;
+  }
+}
+
+/* text-[#828282] */

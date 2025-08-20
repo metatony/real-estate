@@ -27,7 +27,7 @@ const SectionFive = forwardRef((props, ref) => {
           description={
             "Find a wide selection of properties that perfectly suit your needs and preferences.Browse a comprehensive list of properties that offer detailed information."
           }
-          alt ={'property icon'}
+          alt ={'apartment icon'}
         />
         <ProcessCard
           icon={calenderIcon}
@@ -54,7 +54,7 @@ const SectionFive = forwardRef((props, ref) => {
           description={
             "After the visit, if you're ready, we'll guide you through a secure transaction, handling everything from negotiation to paperwork until you're the official owner."
           }
-          alt ={'payment icon'}
+          alt ={'dollar sign icon'}
         />
       </section>
     </section>

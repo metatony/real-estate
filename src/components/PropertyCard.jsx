@@ -1,6 +1,11 @@
 import React from "react";
 import { useGlobal } from "../provider/GlobalProvider";
-import { bathIcon, bedIcon, locationIcon, maximizeIcon } from "../constants/icons";
+import {
+  bathIcon,
+  bedIcon,
+  locationIcon,
+  maximizeIcon,
+} from "../constants/icons";
 import { BounceLoader } from "react-spinners";
 import { Link } from "react-router";
 
@@ -16,54 +21,71 @@ const PropertyCard = () => {
 
   return (
     <section className="grid grid-cols-1 gap-5 lg:grid-cols-3 w-full">
-      {data.properties.slice(0,6).map(function (item) {
+      {data.properties.slice(0, 6).map(function (item) {
         return (
-            <article key={item.id} className="flex flex-col p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
-              <Link to={`/property/${item.id}`}>
+          <article
+            key={item.id}
+            className="flex flex-col p-4 lg:p-6 border-color-gray"
+          >
+            <Link to={`/property/${item.id}`}>
+              <img
+                className="w-full"
+                src={item.desktopImageUrl}
+                alt={`Property image ${item.id}`}
+              />
+            </Link>
+
+            <section className="font-light">
+              {/* title and price */}
+              <section className="flex justify-between item-center card-header-text pt-4 pb-2">
+                <h3>{item.title}</h3>
+                <p>{item.price}</p>
+              </section>
+
+              {/* location */}
+              <section className="flex items-center space-x-1">
                 <img
-                  className="w-full"
-                  src={item.desktopImageUrl}
-                  alt="Services image of real estate agents"
+                  width={20}
+                  height={20}
+                  src={locationIcon}
+                  alt="location icon"
                 />
-              </Link>
-              <div className="font-light">
+                <p className="paragraph-text">{item.location}</p>
+              </section>
 
-                {/* title and price */}
-                <div className="flex justify-between item-center">
-                    <p className="lg:text-xl mt-4 mb-2">{item.title}</p>
-                    <p className="lg:text-xl mt-4 mb-2">{item.price}</p>
+              {/* facilities */}
+              <section className="flex items-center justify-between mt-5">
+                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
+                  <img
+                    width={20}
+                    height={20}
+                    src={bedIcon}
+                    alt="bed icon"
+                  />
+                  <p className="paragraph-text">{item.bedCount}</p>
                 </div>
 
-                {/* location */}
-                <div className="flex items-center space-x-1">
-                    <img width={20} height={20} src={locationIcon} alt="location icon" />
-                    <p className="text-lg lg:text-xl text-[#A4A4A4]">{item.location}</p>
+                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
+                  <img
+                    width={20}
+                    height={20}
+                    src={bathIcon}
+                    alt="bathtub icon"
+                  />
+                  <p className="paragraph-text">{item.bathCount}</p>
                 </div>
 
-                {/* facilities */}
-
-                <div className="flex items-center justify-between mt-5">
-
-                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
-                        <img width={20} height={20} src={bedIcon} alt="location icon" />
-                        <p className="text-[#A4A4A4]">{item.bedCount}</p>
-                    </div>
-
-                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
-                        <img width={20} height={20} src={bathIcon} alt="location icon" />
-                        <p className="text-[#A4A4A4]">{item.bathCount}</p>
-                    </div>
-
-                    <div className="flex items-center space-x-1 border border-[#E5E5E5] py-1 px-2 rounded-lg">
-                        <img width={20} height={20} src={maximizeIcon} alt="location icon" />
-                        <p className="text-[#A4A4A4]">{item.squareFootage}</p>
-                    </div>
-
+                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
+                  <img
+                    height={20}
+                    src={maximizeIcon}
+                    alt="square footage icon"
+                  />
+                  <p className="paragraph-text">{item.squareFootage}</p>
                 </div>
-
-             
-               </div>
-            </article>
+              </section>
+            </section>
+          </article>
         );
       })}
     </section>

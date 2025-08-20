@@ -38,11 +38,11 @@ const Blog = () => {
 
         <section className="flex flex-col items-center justify-center">
           {/* search bar */}
-          <div className=" flex items-center justify-between w-full lg:w-[511px] border border-[#E5E5E5] rounded-xl text-[#A4A4A4] py-1.5 pr-1.5 pl-4 my-4  ">
+          <div className=" flex items-center justify-between w-full lg:w-[511px] border-color-gray paragraph-text py-1.5 pr-1.5 pl-4 my-4">
             <input
-              className="w-full focus:outline-none mr-2"
+              className="w-full focus:outline-none mr-2 paragraph-text"
               type="text"
-              placeholder="Search"
+              placeholder="Search for blog posts..."
               aria-label="Search blog posts"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -77,7 +77,7 @@ const Blog = () => {
               />
             ))
           ) : (
-            <div className="lg:col-span-3 text-center text-gray-500">
+            <div className="lg:col-span-3 text-center paragraph-text">
               No blog posts found.
             </div>
           )}

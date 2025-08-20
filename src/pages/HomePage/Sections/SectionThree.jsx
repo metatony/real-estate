@@ -1,6 +1,10 @@
 import React from "react";
 import SectionHeader from "../../../components/SectionHeader";
-import { servicesImageUrl1, servicesImageUrl2, servicesImageUrl3 } from "../../../constants/images";
+import {
+  servicesImageUrl1,
+  servicesImageUrl2,
+  servicesImageUrl3,
+} from "../../../constants/images";
 import ServicesCard from "../components/ServicesCard";
 
 const SectionThree = () => {
