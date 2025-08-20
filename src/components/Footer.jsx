@@ -9,7 +9,7 @@ const Footer = () => {
         {/* logo area */}
         <section className="flex flex-col space-y-4 lg:col-span-3 lg:w-[428px] w-full">
           <div>
-            <img src={desktopLogoUrl} alt="logo" />
+            <img src={desktopLogoUrl} alt="rubble logo" />
           </div>
           <p className="paragraph-text mt-5 mb-2">
             We are dedicated to helping you find the perfect property with ease.

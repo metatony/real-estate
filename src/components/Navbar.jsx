@@ -12,7 +12,7 @@ const Navbar = () => {
         <li className="flex justify-between items-center">
           {/* Logo displayed on desktop */}
           <a href="/">
-            <img className="" src={desktopLogoUrl} alt="logo" />
+            <img src={desktopLogoUrl} alt="rubble logo" />
           </a>
         </li>
 
