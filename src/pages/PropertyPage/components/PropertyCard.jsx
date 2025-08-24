@@ -45,43 +45,38 @@ const PropertyCard = () => {
               {/* location */}
               <section className="flex items-center space-x-1">
                 <img
-                  width={20}
-                  height={20}
+                  className="w-4 h-4"
                   src={locationIcon}
                   alt="location icon"
                 />
-                <p className="paragraph-text">{item.location}</p>
+                <span className="paragraph-text">{item.location}</span>
               </section>
 
               {/* facilities */}
               <section className="flex items-center justify-between mt-5">
                 <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
-                  <img
-                    width={20}
-                    height={20}
-                    src={bedIcon}
-                    alt="location icon"
-                  />
-                  <p className="paragraph-text">{item.bedCount}</p>
+                  <img className="w-4 h-4" src={bedIcon} alt="location icon" />
+                  <span className="text-[#292929] font-light leading-none">
+                    {item.bedCount}
+                  </span>
+                </div>
+
+                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
+                  <img className="w-4 h-4" src={bathIcon} alt="bathtub icon" />
+                  <span className="text-[#292929] font-light leading-none">
+                    {item.bathCount}
+                  </span>
                 </div>
 
                 <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
                   <img
-                    width={20}
-                    height={20}
-                    src={bathIcon}
-                    alt="bathtub icon"
-                  />
-                  <p className="paragraph-text">{item.bathCount}</p>
-                </div>
-
-                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
-                  <img
-                    height={20}
+                    className="w-4 h-4"
                     src={maximizeIcon}
                     alt="square footage icon"
                   />
-                  <p className="paragraph-text">{item.squareFootage}</p>
+                  <span className="text-[#292929] font-light leading-none">
+                    {item.squareFootage}
+                  </span>
                 </div>
               </section>
             </section>

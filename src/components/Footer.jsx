@@ -5,13 +5,13 @@ import footerMenu from "../constants/footerMenu";
 const Footer = () => {
   return (
     <footer className="py-10 lg:py-20">
-      <section className="grid grid-cols-1 lg:grid-cols-8 text-lg lg:text-xl w-full">
+      <section className="grid grid-cols-1 lg:grid-cols-8 gap-2 text-lg lg:text-xl w-full">
         {/* logo area */}
-        <section className="flex flex-col space-y-4 lg:col-span-3 lg:w-[428px] w-full">
+        <section className="flex flex-col gap-4 lg:col-span-3 lg:w-[428px] w-full">
           <div>
             <img src={desktopLogoUrl} alt="rubble logo" />
           </div>
-          <p className="paragraph-text mt-5 mb-2">
+          <p className="paragraph-text mt-5 mb-2 lg:max-w-[350px] xl:max-w-none">
             We are dedicated to helping you find the perfect property with ease.
             Explore a variety of options and let our expert team guide you to
             your ideal home in a efficient way.
