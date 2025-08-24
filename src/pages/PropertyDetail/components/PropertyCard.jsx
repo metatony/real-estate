@@ -37,53 +37,61 @@ const PropertyCard = () => {
                 src={item.desktopImageUrl}
                 alt={`Property image ${item.id}`}
               />
-            </Link>
 
-            <section className="font-light">
-              {/* title and price */}
-              <section className="flex justify-between item-center card-header-text pt-4 pb-2">
-                <h3>{item.title}</h3>
-                <p>{item.price}</p>
-              </section>
+              <section className="font-light">
+                {/* title and price */}
+                <section className="flex justify-between item-center card-header-text pt-4 pb-2">
+                  <h3>{item.title}</h3>
+                  <p>{item.price}</p>
+                </section>
 
-              {/* location */}
-              <section className="flex items-center gap-1">
-                <img
-                  className="w-4 h-4"
-                  src={locationIcon}
-                  alt="location icon"
-                />
-                <span className="paragraph-text">{item.location}</span>
-              </section>
-
-              {/* facilities */}
-              <section className="flex items-center justify-between mt-5">
-                <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
-                  <img className="w-4 h-4" src={bedIcon} alt="location icon" />
-                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
-                    {item.bedCount}
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
-                  <img className="w-4 h-4" src={bathIcon} alt="bathtub icon" />
-                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
-                    {item.bathCount}
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
+                {/* location */}
+                <section className="flex items-center gap-1">
                   <img
                     className="w-4 h-4"
-                    src={maximizeIcon}
-                    alt="square footage icon"
+                    src={locationIcon}
+                    alt="location icon"
                   />
-                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
-                    {item.squareFootage}
-                  </span>
-                </div>
+                  <span className="paragraph-text">{item.location}</span>
+                </section>
+
+                {/* facilities */}
+                <section className="flex items-center justify-between mt-5">
+                  <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
+                    <img
+                      className="w-4 h-4"
+                      src={bedIcon}
+                      alt="location icon"
+                    />
+                    <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
+                      {item.bedCount}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
+                    <img
+                      className="w-4 h-4"
+                      src={bathIcon}
+                      alt="bathtub icon"
+                    />
+                    <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
+                      {item.bathCount}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
+                    <img
+                      className="w-4 h-4"
+                      src={maximizeIcon}
+                      alt="square footage icon"
+                    />
+                    <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
+                      {item.squareFootage}
+                    </span>
+                  </div>
+                </section>
               </section>
-            </section>
+            </Link>
           </article>
         );
       })}
