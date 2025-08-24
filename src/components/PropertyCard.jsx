@@ -56,14 +56,14 @@ const PropertyCard = () => {
               <section className="flex gap-2 items-center justify-between mt-5">
                 <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
                   <img className="w-4 h-4" src={bedIcon} alt="bed icon" />
-                  <span className="text-[#292929] font-light leading-none">
+                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
                     {item.bedCount}
                   </span>
                 </div>
 
                 <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
                   <img className="w-4 h-4" src={bathIcon} alt="bathtub icon" />
-                  <span className="text-[#292929] font-light leading-none">
+                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl  font-light leading-none">
                     {item.bathCount}
                   </span>
                 </div>
@@ -74,7 +74,7 @@ const PropertyCard = () => {
                     src={maximizeIcon}
                     alt="square footage icon"
                   />
-                  <span className="text-[#292929] font-light leading-none">
+                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
                     {item.squareFootage}
                   </span>
                 </div>

@@ -47,46 +47,40 @@ const PropertyCard = () => {
               </section>
 
               {/* location */}
-              <section className="flex items-center space-x-1">
+              <section className="flex items-center gap-1">
                 <img
-                  width={18}
-                  height={18}
+                  className="w-4 h-4"
                   src={locationIcon}
                   alt="location icon"
                 />
-                <p className="paragraph-text">{item.location}</p>
+                <span className="paragraph-text">{item.location}</span>
               </section>
 
               {/* facilities */}
               <section className="flex items-center justify-between mt-5">
-                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
-                  <img
-                    width={18}
-                    height={18}
-                    src={bedIcon}
-                    alt="location icon"
-                  />
-                  <p className="paragraph-text">{item.bedCount}</p>
+                <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
+                  <img className="w-4 h-4" src={bedIcon} alt="location icon" />
+                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
+                    {item.bedCount}
+                  </span>
                 </div>
 
-                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
-                  <img
-                    width={18}
-                    height={18}
-                    src={bathIcon}
-                    alt="bathtub icon"
-                  />
-                  <p className="paragraph-text">{item.bathCount}</p>
+                <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
+                  <img className="w-4 h-4" src={bathIcon} alt="bathtub icon" />
+                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
+                    {item.bathCount}
+                  </span>
                 </div>
 
-                <div className="flex items-center space-x-1 py-1 px-2 border-color-gray">
+                <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
                   <img
-                    height={18}
-                    width={18}
+                    className="w-4 h-4"
                     src={maximizeIcon}
                     alt="square footage icon"
                   />
-                  <p className="paragraph-text">{item.squareFootage}</p>
+                  <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
+                    {item.squareFootage}
+                  </span>
                 </div>
               </section>
             </section>
