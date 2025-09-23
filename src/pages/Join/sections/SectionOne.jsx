@@ -14,7 +14,7 @@ const SectionOne = () => {
         }
       />
 
-      <section className="grid grid-cols-1 lg:grid-cols-3 w-full gap-6">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6">
         {joinCardDetails.map(function (item) {
           return (
             <JoinCard

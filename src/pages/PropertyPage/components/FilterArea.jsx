@@ -12,31 +12,31 @@ import AmenitiesTile from "./AmenitiesTile";
 
 const FilterArea = () => {
   return (
-    <section className="lg:col-span-1">
+    <section className="lg:col-span-1 lg:sticky lg:top-20 lg:h-fit">
       <div className="flex flex-col space-y-6 p-4 lg:p-6 border-color-gray font-light">
         <h3 className="text-3xl font-[400]">Find Your Property</h3>
         <hr className="border-t border-[#E5E5E5]" />
 
         <section>
           <h4 className="text-xl font-[300]">Location</h4>
-          <p className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-full">
+          <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-full">
             New York, US{" "}
             <span>
               <img width={20} height={20} src={downArrowIcon} alt="down arrow icon" />
             </span>
-          </p>
+          </button>
         </section>
 
         <hr className="border-t border-[#E5E5E5]" />
 
         <section>
           <h4 className="text-xl font-[300]">Property Status</h4>
-          <p className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-full">
+          <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-full">
             Sell{" "}
             <span>
               <img width={20} height={20} src={downArrowIcon} alt="down arrow icon" />
             </span>
-          </p>
+          </button>
         </section>
 
         <hr className="border-t border-[#E5E5E5]" />
@@ -59,21 +59,21 @@ const FilterArea = () => {
           <div className="flex justify-between gap-2">
             <div>
               <p className="mt-4">Bedroom</p>
-              <p className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-[150px] md:w-[184px]">
+              <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-[150px] md:w-[130px] xl:w-[170px]">
                 Any{" "}
                 <span>
                   <img width={20} height={20} src={downArrowIcon} alt="down arrow icon" />
                 </span>
-              </p>
+              </button>
             </div>
             <div>
               <p className="mt-4">Bathroom</p>
-              <p className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-[150px] md:w-[184px]">
+              <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-[150px] md:w-[130px] xl:w-[170px]">
                 Any{" "}
                 <span>
                   <img width={20} height={20} src={downArrowIcon} alt="down arrow icon" />
                 </span>
-              </p>
+              </button>
             </div>
           </div>
         </section>
