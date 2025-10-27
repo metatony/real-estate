@@ -11,6 +11,7 @@ import Join from "./pages/Join/Join";
 import About from "./pages/About/About";
 import { HelmetProvider } from "react-helmet-async";
 import PropertyDetail from "./pages/PropertyDetail/PropertyDetail";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const helmetContext = {};
@@ -31,6 +32,7 @@ function App() {
               <Route path="/about" element={<About />} />
             </Routes>
             <Footer />
+            <Analytics />
           </BrowserRouter>
         </div>
       </HelmetProvider>
