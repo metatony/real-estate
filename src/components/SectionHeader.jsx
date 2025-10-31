@@ -4,7 +4,7 @@ const SectionHeader = ({ sectionName, firstLineDesc, secondLineDesc, title }) =>
   return (
     <article className="flex flex-col text-center items-center justify-center mb-10">
       <p
-        className="border-color-gray text-[#828282] py-1 lg:py-1 px-6 mb-4"
+        className="border-color-gray text-[#828282] py-1 px-6 mb-4 text-[15px] font-[300]"
       >
         {sectionName}
       </p>

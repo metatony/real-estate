@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <img src={desktopLogoUrl} alt="rubble logo" />
           </div>
-          <p className="paragraph-text mt-5 mb-2 lg:max-w-[350px] xl:max-w-none">
+          <p className="font-light text-[14px] md:text-[16px] mt-5 mb-2 lg:max-w-[350px] xl:max-w-none leading-[1.8]">
             We are dedicated to helping you find the perfect property with ease.
             Explore a variety of options and let our expert team guide you to
             your ideal home in a efficient way.
@@ -28,7 +28,7 @@ const Footer = () => {
                   className="font-[400] flex flex-col bg-green"
                 >
                   <p className="pb-6">{item.title}</p>
-                  <div className="flex flex-col space-y-4 paragraph-text">
+                  <div className="flex flex-col space-y-4 font-light text-[14px]">
                     {item.links.map(function (link) {
                       return (
                         <a key={link.name} href={link.url}>

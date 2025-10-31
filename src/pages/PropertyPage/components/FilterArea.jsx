@@ -19,7 +19,7 @@ const FilterArea = () => {
 
         <section>
           <h4 className="text-xl font-[300]">Location</h4>
-          <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-full">
+          <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-full text-[14px]">
             New York, US{" "}
             <span>
               <img width={20} height={20} src={downArrowIcon} alt="down arrow icon" />
@@ -31,7 +31,7 @@ const FilterArea = () => {
 
         <section>
           <h4 className="text-xl font-[300]">Property Status</h4>
-          <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-full">
+          <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-full text-[14px]">
             Sell{" "}
             <span>
               <img width={20} height={20} src={downArrowIcon} alt="down arrow icon" />
@@ -58,8 +58,8 @@ const FilterArea = () => {
           <h4 className="text-xl font-[300]">Room</h4>
           <div className="flex justify-between gap-2">
             <div>
-              <p className="mt-4">Bedroom</p>
-              <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-[150px] md:w-[130px] xl:w-[170px]">
+              <p className="mt-4 text-[14px]">Bedroom</p>
+              <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-[150px] md:w-[130px] xl:w-[170px] text-[14px]">
                 Any{" "}
                 <span>
                   <img width={20} height={20} src={downArrowIcon} alt="down arrow icon" />
@@ -67,8 +67,8 @@ const FilterArea = () => {
               </button>
             </div>
             <div>
-              <p className="mt-4">Bathroom</p>
-              <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-[150px] md:w-[130px] xl:w-[170px]">
+              <p className="mt-4 text-[14px]">Bathroom</p>
+              <button className="flex justify-between items-center border-color-gray px-4 py-2 mt-4 w-[150px] md:w-[130px] xl:w-[170px] text-[14px]">
                 Any{" "}
                 <span>
                   <img width={20} height={20} src={downArrowIcon} alt="down arrow icon" />

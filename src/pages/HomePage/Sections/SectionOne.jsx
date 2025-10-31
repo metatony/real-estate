@@ -13,7 +13,7 @@ const SectionOne = ({ onGetStarted }) => {
           at Your Fingertips
         </h1>
 
-        <p className="pt-5 pb-10 text-white text-[13px] md:text-lg lg:text-xl font-light">
+        <p className="pt-5 pb-10 text-white text-[14px] md:text-lg lg:text-xl font-light leading-[1.7]">
           With customized searches, we help you find properties{" "}
           <br className="lg:hidden" /> that match your desired{" "}
           <br className="hidden lg:block" />

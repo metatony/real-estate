@@ -16,7 +16,7 @@ const Navbar = () => {
           </a>
         </li>
 
-        <li className="lg:flex space-x-8 text-lg">
+        <li className="lg:flex space-x-8 text-[15px]">
           {/* Desktop Navigation Items */}
           {navMenu.map((item) => (
             <NavLink
@@ -34,10 +34,10 @@ const Navbar = () => {
         </li>
 
         <li className="hidden space-x-2 lg:flex">
-          <button className="border-color-gray py-1 px-2">
+          <button className="border-color-gray py-1 px-2 text-[15px]">
             Sign In
           </button>
-          <button className="border py-1 px-4 rounded-xl bg-[#292929] text-white border-none">
+          <button className="border py-1 px-4 rounded-xl bg-[#292929] text-white border-none text-[15px]">
             Book a Call
           </button>
         </li>
