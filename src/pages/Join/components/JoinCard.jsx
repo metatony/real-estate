@@ -12,7 +12,7 @@ const JoinCard = ({ image, title, description }) => {
         <p className="paragraph-text pt-2">{description}</p>
       </div>
 
-      <button className="text-center text-lg xl:text-xl mt-3 py-3 border-color-gray w-full hover:bg-[#292929] hover:text-white">
+      <button className="text-center text-[14px] md:text-[17px]  mt-3 py-3 border-color-gray w-full hover:bg-[#292929] hover:text-white">
         Join Now
       </button>
     </section>

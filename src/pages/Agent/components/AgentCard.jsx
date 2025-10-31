@@ -16,7 +16,7 @@ const AgentCard = ({ image, name, listings }) => {
         <p className="paragraph-text">Real Estate Agent</p>
       </div>
 
-      <button className="text-center lg:text-xl mt-3 py-3 border-color-gray w-full hover:bg-[#292929] hover:text-white">
+      <button className="text-center text-[14px] md:text-[17px] mt-3 py-3 border-color-gray w-full hover:bg-[#292929] hover:text-white">
         View Details
       </button>
     </section>

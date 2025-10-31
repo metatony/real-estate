@@ -30,7 +30,7 @@ body {
 
 @layer components {
   .paragraph-text {
-    @apply text-[#292929] text-[14px] md:text-lg font-light;
+    @apply text-[#292929] text-[14px] md:text-[17px] font-light;
   }
 
   .card-header-text {

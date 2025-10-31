@@ -40,7 +40,7 @@ const Blog = () => {
           {/* search bar */}
           <div className=" flex items-center justify-between w-full lg:w-[511px] border-color-gray paragraph-text py-1.5 pr-1.5 pl-4 my-4">
             <input
-              className="w-full focus:outline-none mr-2 paragraph-text"
+              className="w-full focus:outline-none mr-2 text-[14px] font-light"
               type="text"
               placeholder="Search for blog posts..."
               aria-label="Search blog posts"
