@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import {
   servicesImageUrl1,
@@ -6,10 +6,14 @@ import {
   servicesImageUrl3,
 } from "../../../constants/images";
 import ServicesCard from "../components/ServicesCard";
+import useScrollAnimation from "../../../hooks/useScrollAnimation";
 
 const SectionThree = () => {
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
+
   return (
-    <section className="flex flex-col justify-center items-center py-10 lg:py-20">
+    <section ref={sectionRef} className="flex bg-white flex-col justify-center items-center py-10 lg:py-20">
       <SectionHeader
         sectionName={"Services We Provide"}
         title={"Complete Property Solutions"}

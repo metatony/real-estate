@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+// import React, { useRef } from "react";
 import SectionOne from "./Sections/SectionOne";
 import SectionTwo from "./Sections/SectionTwo";
 import SectionThree from "./Sections/SectionThree";
@@ -7,8 +7,9 @@ import SectionFive from "./Sections/SectionFive";
 import SectionSix from "./Sections/SectionSix";
 import SEO from "../../components/SEO";
 
+
 const HomePage = () => {
-  const sectionFiveRef = useRef(null);
+  // const sectionFiveRef = useRef(null);
   return (
     <main>
       <SEO
@@ -17,14 +18,16 @@ const HomePage = () => {
         name="Rubble Real Estate"
         type="website"
       />
-      <SectionOne onGetStarted={() => sectionFiveRef.current?.scrollIntoView({ behavior: "smooth" })} />
+      <SectionOne  />
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      <SectionFive ref={sectionFiveRef} />
+      <SectionFive />
       <SectionSix />
     </main>
   );
 };
 
 export default HomePage;
+// onGetStarted={() => sectionFiveRef.current?.scrollIntoView({ behavior: "smooth" })}
+// ref={sectionFiveRef} 

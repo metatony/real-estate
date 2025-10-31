@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef } from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import ProcessCard from "../components/ProcessCard";
 import {
@@ -7,10 +7,14 @@ import {
   paymentIcon,
   propertyIcon,
 } from "../../../constants/icons";
+import useScrollAnimation from "../../../hooks/useScrollAnimation";
 
 const SectionFive = forwardRef((props, ref) => {
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
+
   return (
-    <section className="py-10 lg:py-20" ref={ref}>
+    <section className="py-10 lg:py-20 bg-white" ref={sectionRef}>
       <SectionHeader
         sectionName={"How It Works"}
         title={"Journey to Achieve Property Success"}

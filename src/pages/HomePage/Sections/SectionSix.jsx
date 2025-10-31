@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import CustomForm from "../../../components/CustomForm";
+import useScrollAnimation from "../../../hooks/useScrollAnimation";
 
 const SectionSix = () => {
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
+
   return (
-    <section className="py-10 lg:py-20">
+    <section ref={sectionRef} className="py-10 lg:py-20 bg-white">
       <SectionHeader
         sectionName={"Contact Us"}
         title={"Connect to Find Your Property"}

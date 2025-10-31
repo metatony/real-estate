@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
+import useScrollAnimation from "../../../hooks/useScrollAnimation";
 
 const SectionOne = ({ onGetStarted }) => {
+  const containerRef = useRef(null);
+  useScrollAnimation(containerRef);
+
   return (
     <section
+      ref={containerRef}
       className="hero h-screen flex flex-col pb-10 "
       style={{ height: "calc(100vh - 90px)" }}
     >

@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import {
   statsDesktopImageUrl,
   statsMobileImageUrl,
 } from "../../../constants/images";
 import StatsCard from "../components/StatsCard";
+import useScrollAnimation from "../../../hooks/useScrollAnimation";
+
+
 
 const SectionTwo = () => {
+
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
+
   return (
-    <section className="flex flex-col justify-center items-center py-10 lg:py-20">
+    <section ref={sectionRef} className="flex bg-white flex-col justify-center items-center py-10 lg:py-20">
       <SectionHeader
         sectionName={"About Rubble"}
         title={"Trusted Partner for Your Journey"}
