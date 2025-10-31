@@ -2,7 +2,7 @@ import React from "react";
 
 const JoinCard = ({ image, title, description }) => {
   return (
-    <section className="font-light border border-[#E5E5E5] rounded-2xl p-4 lg:p-6">
+    <section className="font-light border border-[#E5E5E5] rounded-2xl p-4 lg:p-6 space-y-2">
       <div>
         <img className="w-full" src={image} alt="services cover image" />
       </div>

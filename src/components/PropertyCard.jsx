@@ -36,7 +36,7 @@ const PropertyCard = () => {
 
               <section className="font-light">
                 {/* title and price */}
-                <section className="flex justify-between item-center card-header-text pt-4 pb-2">
+                <section className="flex justify-between item-center pt-4 pb-2 text-[20px] lg:text-xl font-[400] text-[#292929]">
                   <h3>{item.title}</h3>
                   <p>{item.price}</p>
                 </section>
@@ -55,7 +55,7 @@ const PropertyCard = () => {
                 <section className="flex gap-2 items-center justify-between mt-5">
                   <div className="flex items-center gap-1 py-1 px-2 border-color-gray">
                     <img className="w-4 h-4" src={bedIcon} alt="bed icon" />
-                    <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
+                    <span className="text-[#292929] text-[14px] md:text-[12px] xl:text-[18px] font-light leading-none">
                       {item.bedCount}
                     </span>
                   </div>
@@ -66,7 +66,7 @@ const PropertyCard = () => {
                       src={bathIcon}
                       alt="bathtub icon"
                     />
-                    <span className="text-[#292929] text-lg lg:text-base xl:text-xl  font-light leading-none">
+                    <span className="text-[#292929] text-[14px] md:text-[12px] xl:text-[18px] font-light leading-none">
                       {item.bathCount}
                     </span>
                   </div>
@@ -77,7 +77,7 @@ const PropertyCard = () => {
                       src={maximizeIcon}
                       alt="square footage icon"
                     />
-                    <span className="text-[#292929] text-lg lg:text-base xl:text-xl font-light leading-none">
+                    <span className="text-[#292929] text-[14px] md:text-[12px] xl:text-[18px] font-light leading-none">
                       {item.squareFootage}
                     </span>
                   </div>

@@ -30,15 +30,15 @@ body {
 
 @layer components {
   .paragraph-text {
-    @apply text-[#292929] text-lg lg:text-xl font-light;
+    @apply text-[#292929] text-[14px] md:text-lg font-light;
   }
 
   .card-header-text {
-    @apply text-2xl lg:text-2xl font-[400] text-[#292929];
+    @apply text-[20px] md:text-xl lg:text-2xl font-[400] text-[#292929];
   }
 
   .section-header-title {
-    @apply text-3xl lg:text-6xl text-[#292929] font-[400];
+    @apply text-xl md:text-2xl lg:text-5xl text-[#292929] font-[400];
   }
 
   .border-color-gray {

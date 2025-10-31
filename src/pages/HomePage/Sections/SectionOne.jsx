@@ -7,13 +7,13 @@ const SectionOne = ({ onGetStarted }) => {
       style={{ height: "calc(100vh - 90px)" }}
     >
       <article className="text-white text-center pt-28 relative z-10">
-        <h1 className="text-5xl lg:text-7xl font-[400]">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-[400] leading-normal">
           Discover Your <br className="lg:hidden" /> Dream Home
           <br className="hidden lg:block" /> Right <br className="lg:hidden" />
           at Your Fingertips
         </h1>
 
-        <p className="pt-5 pb-10 text-white text-lg lg:text-xl font-light">
+        <p className="pt-5 pb-10 text-white text-[13px] md:text-lg lg:text-xl font-light">
           With customized searches, we help you find properties{" "}
           <br className="lg:hidden" /> that match your desired{" "}
           <br className="hidden lg:block" />
@@ -21,6 +21,7 @@ const SectionOne = ({ onGetStarted }) => {
           journey to your ideal property!
         </p>
       </article>
+
       <div className="flex items-center justify-center space-x-4 relative z-10">
         <button
           className="border lg:border-none border-gray-200 bg-[#292929] text-white py-2 lg:py-3 px-6 rounded-md"

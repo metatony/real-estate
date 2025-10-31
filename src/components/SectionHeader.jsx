@@ -9,7 +9,7 @@ const SectionHeader = ({ sectionName, firstLineDesc, secondLineDesc, title }) =>
         {sectionName}
       </p>
       <h2 className="section-header-title">{title}</h2>
-      <p className="paragraph-text mt-3 font-light">
+      <p className="paragraph-text mt-3 font-light w-[260px] md:w-full">
         {firstLineDesc} <br className="lg:hidden" />
         {secondLineDesc}
       </p>

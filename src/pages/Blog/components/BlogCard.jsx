@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogCard = ({ image, title, description }) => {
   return (
-    <section className="border-color-gray p-4 lg:p-6">
+    <section className="border-color-gray p-4 lg:p-6 space-y-2">
       <div>
         <img className="w-full" src={image} alt="blog cover image" />
       </div>
