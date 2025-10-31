@@ -21,7 +21,7 @@ const SectionTwo = () => {
           <h3 className="card-header-text">Partner for Every Property Need</h3>
           <p className="paragraph-text mt-2 mb-2">
             As a leading property platform, we provide full-service solutions to
-            meet your needs. With top <br /> properties and dedicated experts,
+            meet your needs. With top properties and dedicated experts,
             we ensure a seamless experience for buying, selling, or renting.
           </p>
           <img
