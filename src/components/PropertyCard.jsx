@@ -15,7 +15,7 @@ const PropertyCard = () => {
   if (loading)
     return (
       <div className="flex items-center justify-center h-[50vh]">
-        <BounceLoader />;
+        <BounceLoader />
       </div>
     );
 

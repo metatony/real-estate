@@ -28,7 +28,7 @@ const Agent = () => {
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {loading ? (
             <div className="lg:col-span-3 flex items-center justify-center h-[50vh]">
-              <BounceLoader />;
+              <BounceLoader />
             </div>
           ) : (
             data.agents.map(function (item) {
